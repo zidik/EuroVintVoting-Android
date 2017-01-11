@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="45sp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp"
+        tools:text="1"/>
+    <TextView
+        android:id="@+id/votecount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"
+        tools:text="38"/>
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/place"
+        android:textStyle="bold"
+        tools:text="Country of Origin"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/place"
+        android:layout_below="@id/country"
+        tools:text="Title of the song"/>
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/place"
+        android:layout_below="@id/title"
+        tools:text="Artist and Performer"/>
+</RelativeLayout>
